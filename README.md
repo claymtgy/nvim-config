@@ -11,6 +11,9 @@ Ensure you have ripgrep installed
 From there, start Neovim, enter "Normal Mode" with the escape key, and type ":PlugInstall" to install all the plugins
 
 ## Keys:
-<leader> is configured by default to ","
-<leader> ff will run "find files" using Telescope
-<leader> fg will search contents of files
+```<leader> is``` configured by default to ","
+
+```<leader> ff``` will run "find files" using Telescope
+
+```<leader> fg``` will search contents of files
+
