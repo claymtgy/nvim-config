@@ -2,16 +2,16 @@
 My personal configuration for Neovim.
 
 ## Installation:
-Execute installation.sh to move the configuration files into .config/nvim
+(When I get one figured out) Execute installation.sh to move the configuration files into .config/nvim
 
-Ensure you have vim-plug installed (https://github.com/junegunn/vim-plug)
+This is now a Lua config. Currently using Lazy.nvim
 Ensure you have ripgrep installed
 
 
 From there, start Neovim, enter "Normal Mode" with the escape key, and type ":PlugInstall" to install all the plugins
 
 ## Keys:
-```<leader> is``` configured by default to ","
+```<leader>``` is configured to ","
 
 ```<leader> ff``` will run "find files" using Telescope
 
