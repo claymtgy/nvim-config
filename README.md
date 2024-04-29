@@ -13,7 +13,7 @@ From there, start Neovim, enter "Normal Mode" with the escape key, and type ":Pl
 ## Keys:
 ```<leader>``` is configured to ","
 
-```<leader> ff``` will run "find files" using Telescope
+```<leader> sf``` will run "find files" using Telescope
 
-```<leader> fg``` will search contents of files
+```<leader> sg``` will search contents of files
 
