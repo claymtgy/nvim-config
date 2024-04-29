@@ -38,7 +38,7 @@ You will probably have to run ```:MasonUpdate``` to update the LSP side of thing
 Run :Lazy to check plugins status.
 
 ## Keys:
-```<leader>``` is configured to ","
+```<leader>``` is configured to " "
 
 ```<leader> sf``` will run "find files" using Telescope
 
