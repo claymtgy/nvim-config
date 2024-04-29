@@ -1,6 +1,8 @@
 # nvim-config
 My personal configuration for Neovim.
 
+This is largely a branch off from [kickstart](https://github.com/nvim-lua/kickstart.nvim)
+
 ## Installation:
 (When I get one figured out) Execute installation.sh to move the configuration files into .config/nvim
 There is an installation.sh file in the repo. It's pretty simple, but I haven't tested it yet. 
