@@ -123,6 +123,7 @@ require("lazy").setup({
 	-- NOTE: Plugins can also be added by using a table,
 	-- with the first argument being the link and the following
 	-- keys can be used to configure plugin behavior/loading/etc.
+	"f-person/git-blame.nvim",
 	--
 	-- Use `opts = {}` to force a plugin to be loaded.
 	--
@@ -194,6 +195,33 @@ require("lazy").setup({
 	-- you do for a plugin at the top level, you can do for a dependency.
 	--
 	-- Use the `dependencies` key to specify the dependencies of a particular plugin
+	{
+		"adalessa/laravel.nvim",
+		dependencies = {
+			"nvim-telescope/telescope.nvim",
+			"tpope/vim-dotenv",
+			"MunifTanjim/nui.nvim",
+			"nvimtools/none-ls.nvim",
+		},
+		cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
+		keys = {
+			{ "<leader>la", ":Laravel artisan<cr>" },
+			{ "<leader>lr", ":Laravel routes<cr>" },
+			{ "<leader>lm", ":Laravel related<cr>" },
+		},
+		event = { "VeryLazy" },
+		config = true,
+	},
+
+	{
+		"rcarriga/nvim-notify",
+		config = function()
+			local notify = require("notify")
+			-- This sets the background color
+			notify.setup({ background_colour = "#000000" })
+			vim.notify = notify.notify
+		end,
+	},
 
 	{ -- Fuzzy Finder (files, lsp, etc)
 		"nvim-telescope/telescope.nvim",
@@ -461,7 +489,8 @@ require("lazy").setup({
 				--
 				-- But for many setups, the LSP (`tsserver`) will work just fine
 				tsserver = {},
-				phpactor = {},
+				--phpactor = {},
+				intelephense = {},
 				volar = {},
 
 				--
