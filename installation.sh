@@ -23,7 +23,7 @@ fi
 if [[ $choice == 3 ]]; then
   echo "Sudo needed to install dependencies"
   sudo apt update
-  sudo apt-get install -y neovim golang-go npm python3 python3-pip python3-venv python3-dev python3-pynvim
+  sudo apt-get install -y neovim golang-go npm python3 python3-pip python3-venv python3-dev python3-pynvim composer
   echo "Finished installing dependencies"
 fi
 
