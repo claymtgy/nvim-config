@@ -4,20 +4,20 @@ $now_install = "n"
 
 echo "Select an option:"
 
-echo "1: Copy current Neovim configuration to the current directory"
-echo "2: Copy repo's Neovim configuration to the user directory"
+echo "1: Copy repo's Neovim configuration to the user directory"
+echo "2: Copy current Neovim configuration to the current directory"
 echo "3: Install all languages and dependancies"
 
 read choice
 
 if [[ $choice == 1 ]]; then
-  cp $HOME/.config/nvim/init.lua ./init.lua
-  echo "Copied user's Neovim configuration to the current directory"
+  cp ./init.lua $HOME/.config/nvim/init.lua
+  echo "Copied repo's Neovim configuration to the user directory"
 fi
 
 if [[ $choice == 2 ]]; then
-  cp ./init.lua $HOME/.config/nvim/init.lua
-  echo "Copied repo's Neovim configuration to the user directory"
+  cp $HOME/.config/nvim/init.lua ./init.lua
+  echo "Copied user's Neovim configuration to the current directory"
 fi
 
 if [[ $choice == 3 ]]; then
